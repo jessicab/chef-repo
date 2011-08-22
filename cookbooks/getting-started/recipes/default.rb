@@ -17,12 +17,9 @@
 # limitations under the License.
 #
 
-#template "/tmp/chef-getting-started.txt" do
-#  source "chef-getting-started.txt.erb"
-#  mode "0644"
-#end
 block do
-  node.default[:foo][:bar]
+#  node.default[:foo][:bar]
 #node.attribute[:foo][:bar]
+node.set['some_command_complete'] = true
   node.save
 end
